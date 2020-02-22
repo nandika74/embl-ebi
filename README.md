@@ -44,11 +44,11 @@ Select the embl-ebi project and select Run As -> Spring Boot App
     embl-ebi swagger UI will be loaded in the browser.
 
 * Method 2: Curl commands
-    - Refer the curl commands from project location <<Project-root>>/Resources/curl commands.txt
+    - Refer the curl commands from project location **/Resources/curl commands.txt**
     Run the test scripts on Postman tool
     
 * Method 2: Using Postman Scripts
-    - Refer the Postman test scripts from project location <<Project-root>>/Resources/embl-ebi.postman_collection.json
+    - Refer the Postman test scripts from project location **/Resources/embl-ebi.postman_collection.json**
     Run the test scripts on Postman tool
     
 ## Verify Database Entries
