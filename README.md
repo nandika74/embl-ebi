@@ -1,2 +1,49 @@
 # embl-ebi
 EMBL-EBI Assesement
+
+This project is to create REST API to manage person data. API layer provides stores, updates, retrieve and delete operations.
+
+Prerequisites
+1. Java version 8 or higher
+2. Java IDE (Spring Tool Suite, Eclipse or IntelliJ IDEA)
+3. Apache Maven
+4. H2 Database (as Memory DB)
+
+Installing
+Clone or create Spring Boot project using the given repository
+
+Click on the project (e.g. embl-ebi) and select configure
+Select convert to maven project
+You can see the converted maven projects in the Project explorer section
+
+Please update the database credentials in the application.properties file before build the embl-ebi project
+
+embl-ebi module developed as a Spring Boot application with Swagger UI.
+
+Running Unit Tests
+There are few unit test cases have provided to test the APIs
+You can access them in src/test/java package in the embl-ebi project
+
+* 1. First clean and build the embl-ebi project
+* 2. Go to the PersonControllerTest in src/test/java/
+* 3. Right click on test class, "Run as" > Junit test
+
+Given test cases are provided to test all the person management API calls.
+
+Deployment and Run
+Select the embl-ebi project and select Run As -> Spring Boot App
+
+Verify API functionalities
+
+Method 1: Using Swagger UI
+Open a web browser and type http://localhost:8080/embl-ebi/swagger-ui.html 
+embl-ebi swagger ui will be loaded in the browser.
+
+
+Verify Database Entries
+Open H2 database console and type http://localhost:8080/h2-console
+H2 database console login page will be loaded in the browser.
+Use database credentials (user: sa and password: sa), test the connection click on "Test Connection" button and connect to the database using "Connect" button.
+
+Special Note
+Entire system architecture has developed in a way which provide loose coupling, scalability, easy maintenance and several other features."
