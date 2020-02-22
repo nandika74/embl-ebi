@@ -2,6 +2,12 @@
 
 This project is to create REST API to manage person data. API layer provides stores, updates, retrieve and delete operations.
 
+## Solved Pronlems
+1. Unit test cases to ensure the API functionalities without installing locally.
+2. Secure the APIs using basic authentication
+3. Postman scripts to test the functionality
+4. Swagger as API documentation
+
 ## Prerequisites
 1. Java version 8 or higher
 2. Java IDE (Spring Tool Suite, Eclipse or IntelliJ IDEA)
