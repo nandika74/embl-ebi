@@ -54,4 +54,4 @@ Use database credentials (*user: sa* and *password: sa*), test the connection cl
 
 ## Special Note
 - Entire system architecture has developed in a way which provide loose coupling, scalability, easy maintenance and several other features.
-- Authentication and authorization functionality need to be improved.
+- Authentication and authorization functionality need to be implemented.
