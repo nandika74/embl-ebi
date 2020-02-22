@@ -1,8 +1,8 @@
-# EMBL-EBI Assesement
+# EMBL-EBI Assessment
 
 This project is to create REST API to manage person data. API layer provides stores, updates, retrieve and delete operations.
 
-## Solved Pronlems
+## Solved Problems
 1. Unit test cases to ensure the API functionalities without installing locally.
 2. Secure the APIs using basic authentication
 3. Postman scripts to test the functionality
@@ -41,11 +41,11 @@ Select the embl-ebi project and select Run As -> Spring Boot App
 ## Verify API functionalities
 * Method 1: Using Swagger UI
     - Open a web browser and type http://localhost:8080/embl-ebi/swagger-ui.html 
-    embl-ebi swagger ui will be loaded in the browser.
+    embl-ebi swagger UI will be loaded in the browser.
 
 * Method 2: Using Postman Scripts
     - Refer the Postman test scripts from project location <<Project-root>>/Resources/Test scripts
-    Run the test cripts on Postman tool
+    Run the test scripts on Postman tool
     
 ## Verify Database Entries
 Open H2 database console and type http://localhost:8080/h2-console
@@ -53,4 +53,4 @@ H2 database console login page will be loaded in the browser.
 Use database credentials (*user: sa* and *password: sa*), test the connection click on **Test Connection** button and connect to the database using **Connect** button.
 
 ## Special Note
-Entire system architecture has developed in a way which provide loose coupling, scalability, easy maintenance and several other features."
+Entire system architecture has developed in a way which provide loose coupling, scalability, easy maintenance and several other features.
