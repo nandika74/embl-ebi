@@ -2,13 +2,13 @@
 
 This project is to create REST API to manage person data. API layer provides stores, updates, retrieve and delete operations.
 
-**Prerequisites**
+## Prerequisites
 1. Java version 8 or higher
 2. Java IDE (Spring Tool Suite, Eclipse or IntelliJ IDEA)
 3. Apache Maven
 4. H2 Database (as Memory DB)
 
-**Installing**
+## Installing
 Clone or create Spring Boot project using the given repository
 
 * Click on the project (e.g. embl-ebi) and select configure
@@ -19,7 +19,7 @@ Clone or create Spring Boot project using the given repository
 
 embl-ebi module developed as a Spring Boot application with Swagger UI.
 
-**Running Unit Tests**
+## Running Unit Tests
 There are few unit test cases have provided to test the APIs
 You can access them in src/test/java package in the embl-ebi project
 
@@ -29,10 +29,10 @@ You can access them in src/test/java package in the embl-ebi project
 
 Given test cases are provided to test all the person management API calls.
 
-**Deployment and Run**
+## Deployment and Run
 Select the embl-ebi project and select Run As -> Spring Boot App
 
-**Verify API functionalities**
+## Verify API functionalities
 * Method 1: Using Swagger UI
     - Open a web browser and type http://localhost:8080/embl-ebi/swagger-ui.html 
     embl-ebi swagger ui will be loaded in the browser.
@@ -41,10 +41,10 @@ Select the embl-ebi project and select Run As -> Spring Boot App
     - Refer the Postman test scripts from project location <<Project-root>>/Resources/Test scripts
     Run the test cripts on Postman tool
     
-**Verify Database Entries**
+## Verify Database Entries
 Open H2 database console and type http://localhost:8080/h2-console
 H2 database console login page will be loaded in the browser.
-Use database credentials (user: sa and password: sa), test the connection click on "Test Connection" button and connect to the database using "Connect" button.
+Use database credentials (*user: sa* and *password: sa*), test the connection click on **Test Connection** button and connect to the database using **Connect** button.
 
-**Special Note**
+## Special Note
 Entire system architecture has developed in a way which provide loose coupling, scalability, easy maintenance and several other features."
