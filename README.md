@@ -53,4 +53,5 @@ H2 database console login page will be loaded in the browser.
 Use database credentials (*user: sa* and *password: sa*), test the connection click on **Test Connection** button and connect to the database using **Connect** button.
 
 ## Special Note
-Entire system architecture has developed in a way which provide loose coupling, scalability, easy maintenance and several other features.
+- Entire system architecture has developed in a way which provide loose coupling, scalability, easy maintenance and several other features.
+- Authentication and authorization functionality need to be improved.
