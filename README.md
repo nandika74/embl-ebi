@@ -34,7 +34,6 @@ Given test cases are provided to test all the person management API calls.
 Select the embl-ebi project and select Run As -> Spring Boot App
 
 # Verify API functionalities
-
 * Method 1: Using Swagger UI
 Open a web browser and type http://localhost:8080/embl-ebi/swagger-ui.html 
 embl-ebi swagger ui will be loaded in the browser.
@@ -43,10 +42,10 @@ embl-ebi swagger ui will be loaded in the browser.
 Refer the Postman test scripts from project location <<Project-root>>/Resources/Test scripts
 Run the test cripts on Postman tool
     
-Verify Database Entries
+# Verify Database Entries
 Open H2 database console and type http://localhost:8080/h2-console
 H2 database console login page will be loaded in the browser.
 Use database credentials (user: sa and password: sa), test the connection click on "Test Connection" button and connect to the database using "Connect" button.
 
-Special Note
+# Special Note
 Entire system architecture has developed in a way which provide loose coupling, scalability, easy maintenance and several other features."
