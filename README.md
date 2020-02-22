@@ -40,7 +40,7 @@ Select the embl-ebi project and select Run As -> Spring Boot App
 
 ## Verify API functionalities
 * Method 1: Using Swagger UI
-    - Open a web browser and type http://localhost:8080/embl-ebi/swagger-ui.html 
+    - Open a web browser and type http://localhost:8080/swagger-ui.html 
     embl-ebi swagger UI will be loaded in the browser.
 
 * Method 2: Using Postman Scripts
