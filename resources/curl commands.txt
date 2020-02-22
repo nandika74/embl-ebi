@@ -1,0 +1,11 @@
+# Find all
+curl -X GET -i -H "Content-Type: application/json" http://localhost:8080/person/find/all
+
+# Create
+curl -i -X POST -H "Content-Type: application/json" -d "[ { \"first_name\":\"John\", \"last_name\":\"Wick\",\"age\":\"29\",\"favourite_colour\":\"red\", \"hobby\": [\"shopping\", \"footbal\"] }, {\"first_name\":\"Sarah\", \"last_name\":\"Ravan\", \"age\":\"54\",\"favourite_colour\":\"blue\", \"hobby\": [\"chess\"]}]" http://localhost:8080/person/create
+
+# Delete by ID
+curl -i -X DELETE -H "Content-Type: application/json" -d "[{ \"id\": 1 },{ \"id\": 2 }]" http://localhost:8080/person/delete
+
+# Delete collection
+curl -i -X DELETE -H "Content-Type: application/json"  http://localhost:8080/person/delete/7

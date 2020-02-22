@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "6cd876f7-efcf-4ce0-8fbc-237e1bc52d3d",
+		"name": "embl-ebi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find all",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/person/find/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"find",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\t[\r\n\t\t{\r\n\t\t\t\"first_name\":\"John\",\r\n\t\t\t\"last_name\":\"Wick\",\r\n\t\t\t\"age\":\"29\",\r\n\t\t\t\"favourite_colour\":\"red\",\r\n\t\t\t\"hobby\": [\"shopping\", \"footbal\"]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"first_name\":\"Sarah\",\r\n\t\t\t\"last_name\":\"Ravan\",\r\n\t\t\t\"age\":\"54\",\r\n\t\t\t\"favourite_colour\":\"blue\",\r\n\t\t\t\"hobby\": [\"chess\"]\r\n\t\t}\r\n\t]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/person/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/person/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n {\r\n        \"id\": 3,\r\n        \"first_name\": \"John\",\r\n        \"last_name\": \"Wick\",\r\n        \"age\": \"29\",\r\n        \"favourite_colour\": \"red\",\r\n        \"hobbies\": []\r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"first_name\": \"Sarah\",\r\n        \"last_name\": \"Ravan\",\r\n        \"age\": \"54\",\r\n        \"favourite_colour\": \"blue\",\r\n        \"hobbies\": []\r\n    }\r\n    ]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/person/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
